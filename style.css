@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(140, 93, 158);
+    background-color: rgb(30, 38, 53);
 
-    color: white;
+    color: rgb(255, 255, 255);
 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -9,6 +9,10 @@ body{
 img{
     height: auto;
     width: 100%;
+}
+
+main{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -21,6 +25,23 @@ img{
 
 .highlight{
     font-weight: 700;
-    background-color: #f04bff;
-    color: black;
+    background-color: #3a3a55;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-link:hover{
+    color:white
 }
