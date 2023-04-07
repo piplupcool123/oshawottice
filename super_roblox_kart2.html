@@ -33,58 +33,58 @@
 		  color: #fff;
 		  padding: 10px;
 
-          margin-bottom: 50px;
+      margin-bottom: 50px;
 		}
 
 
-        nav {
-            height: 50px;
-            margin-bottom: 25px;
+    nav {
+      height: 50px;
+      margin-bottom: 25px;
 
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav li {
-            float: left;
-        }
-        nav li a {
-            display: block;
-            color: #333;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            background-color: none;
-            transition: all 0.5s ease;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    nav li {
+      float: left;
+    }
+    nav li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color: none;
+      transition: all 0.5s ease;
 
-            font-weight: 600;
+      font-weight: 600;
             
-            margin-left: 20px;
-        }
-        nav li a:hover {
-            background-color: #38a3a5;
-            color: white;
-            transform: scale(1.1);
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
+      margin-left: 20px;
+    }
+    nav li a:hover {
+      background-color: #38a3a5;
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
 
-        .box{
-            background-color: rgba(255, 255, 255, 0.75);
-            box-shadow: #22577a;
+    .box{
+      background-color: rgba(255, 255, 255, 0.75);
+      box-shadow: #22577a;
 
-            padding: 10px;
+      padding: 10px;
 
-            margin-top: 10px;
+      margin-top: 10px;
 
-            border-radius: 20px;
-        }
+      border-radius: 20px;
+    }
 
-        .boxUl{
-            background-color: rgba(255, 255, 255, 0.75);
-        }
+    .boxUl{
+      background-color: rgba(255, 255, 255, 0.75);
+    }
 
 
 
@@ -106,7 +106,7 @@
 		  max-width: 100%;
 		  height: auto;
 
-          border-radius: 20px;
+      border-radius: 20px;
 		}
 
 		h2 {
@@ -119,13 +119,13 @@
 		  padding: 0 0 0 30px;
 		  font-size: 18px;
 
-          background-color: rgba(168, 255, 255, 0.75);
-          box-shadow: #22577a;
+      background-color: rgba(168, 255, 255, 0.75);
+      box-shadow: #22577a;
 
-          padding-top: 25px;
-          padding-bottom: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
 
-          border-radius: 20px;
+      border-radius: 20px;
 		}
 
 
@@ -136,9 +136,37 @@
 		  text-align: center;
 		  padding: 10px;
 
-          margin-top: 50px;
-          padding-top: 40px;
+      margin-top: 50px;
+      padding-top: 40px;
 		}
+
+    .container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+    #headerContainer{
+      max-width: 800px;
+			margin: 0 auto;
+			padding: 0 20px;
+    }
+
+    #navBarIcon{
+      display: none;
+    }
+
+    #logo{
+      display:block;
+    }
+
+    #desktopNav{
+      display: block;
+    }
+
+    #mobileNav{
+      display:none;
+    }
 
 		@media screen and (max-width: 600px) {
 		  h1 {
@@ -156,34 +184,116 @@
 		  ol, ul {
 		    font-size: 16px;
 		  }
-		}
 
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 0 20px;
+      header{
+        min-height: 10vh;
+      }
+
+      #desktopNav{
+        display: none;
+      }
+
+      #logo{
+        float:left;
+        height: 10vh;
+      }
+
+      #mobileNav{
+        display:block;
+      }
+      #mobileNavIcon{
+        height: 5vh;
+      }
+
+      ol, ul {
+		    margin: 0;
+		    padding: 0 0 0 30px;
+		    font-size: 18px;
+
+        background-color: rgba(113, 165, 165, 0.466);
+        box-shadow: #22577a;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        border-radius: 20px;
+		  }
+      nav li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: none;
+        transition: all 0.5s ease;
+
+        font-weight: 600;
+
+                  
+        margin-left: 10px;
+      }
+      nav li a:hover {
+        background-color: #38a3a5;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      #headerContainer{
+        max-width: 800px;
+			  margin: 0 auto;
+			  padding: 0 0px;
+      }
 		}
-	</style>   
+    @media screen and (max-width: 450px) {
+      #mobileNavIcon{
+        height: 4vh;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      #mobileNavIcon{
+        height: 3vh;
+      }
+    }
+	</style>  
+   
 </head>
 
 <body>
     <header>
-		<div class="container">
-			<img src="Images/srk2/srkColor.png" alt="Super Roblox Kart logo" class="logo">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Roblox</a>
-                    </li>
-                    <li>
-                        <a href="#">Discord</a>
-                    </li>
-                    <li style="float:right; margin-right:20px">
-                        <a href="#">Contact</a>
-                    </li>
+		<div id="headerContainer">
+      <div id="imagesDiv">
+        <img src="Images/srk2/srkColor.png" alt="Super Roblox Kart logo" id="logo">
+        <img src="Images/srk2/icons8-diagonal-lines-80.png" alt="Super Roblox Kart logo" id="navBarIcon">
+      </div>
+      <nav id="mobileNav">
+        <ul>
+          <li>
+            <a href="#"><img src="Images/srk2/icons8-roblox-50 (2).png" alt="Super Roblox Kart logo" id="mobileNavIcon"></a>
+          </li>
+          <li>
+            <a href="#"><img src="Images/srk2/icons8-discord-50.png" alt="Super Roblox Kart logo" id="mobileNavIcon"></a>
+          </li>
+          <li style="float:right; margin-right:10px">
+            <a href="#"><img src="Images/srk2/icons8-diagonal-lines-80.png" alt="Super Roblox Kart logo" id="mobileNavIcon"></a>
+          </li>
+        </ul>
+      </nav>
 
-                </ul>
-            </nav>
+      <nav id="desktopNav">
+        <ul>
+          <li>
+            <a href="#">Roblox</a>
+          </li>
+          <li>
+            <a href="#">Discord</a>
+          </li>
+          <li style="float:right; margin-right:20px">
+            <a href="#">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
 		</div>
 	</header>
     
